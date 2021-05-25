@@ -29,10 +29,9 @@ jobs:
           SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
       # Setup a flutter environment.
       # https://github.com/marketplace/actions/flutter-action
-      - uses: subosito/flutter-action@v1.2.0
+      - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.2.0'
-          channel: 'dev'
       - run: flutter pub get
         working-directory: src
       # run static analys code
