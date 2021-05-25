@@ -18,3 +18,4 @@ key.properties
 .idea/
 
 __pycache__
+.vscode/
