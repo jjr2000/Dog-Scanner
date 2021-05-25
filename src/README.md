@@ -1,16 +1,3 @@
 # Dog Scanner
 
-An application for scanning album covers to get a track list and track preview.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Whether you have a doggo, pupper, woofer or floofer, every hooman endevours to know the breed of their furry friend! Dog Scanner aims to answer this question. Using cutting edge computer vision, machine learning and neural network technology, Dog Scanner will make a best guess estimate of what breed (or mix of breeds) your doggo is.
