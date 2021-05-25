@@ -2,7 +2,7 @@ on:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
-      - '*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 name: Upload Release Asset
 
@@ -24,18 +24,17 @@ jobs:
           SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
       # Setup a flutter environment.
       # https://github.com/marketplace/actions/flutter-action
-      - uses: subosito/flutter-action@v1.2.0
+      - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.2.0'
-          channel: 'dev'
       - run: flutter pub get
         working-directory: src
       # run static analys code
-      #- run: flutter  analyze
-      #  working-directory: src
-      # run  flutter widgets tests  and unit tests
-      - run: flutter test --coverage
+      - run: flutter analyze
         working-directory: src
+      # run  flutter widgets tests  and unit tests
+      #- run: flutter test --coverage
+      #  working-directory: src
       - run: flutter build apk --split-per-abi
         working-directory: src
         env:
