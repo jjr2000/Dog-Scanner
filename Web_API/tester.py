@@ -1,6 +1,5 @@
 import requests
 import base64
-from PIL import Image
 
 image_file = open("test_images/leo.jpg", "rb").read()  
 base64string = base64.b64encode(image_file)

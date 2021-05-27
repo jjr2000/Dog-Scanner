@@ -1,7 +1,6 @@
 import tensorflow as tf
 import tensorflow_hub as hub
 from PIL import Image
-import numpy as np
 from flask import Flask, render_template
 from flask_restful import Resource, Api, reqparse
 import numpy as np

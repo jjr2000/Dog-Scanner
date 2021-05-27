@@ -31,7 +31,7 @@ class _WebRequestLoadingState extends State<WebRequestLoading> {
     } else {
       // Tell the user their image was shit and have them retake it.
       error =
-          "Detection error please. Please make sure your pupper is well lit and staying nice and still while taking the photo.";
+          "Detection error. Please make sure your pupper is well lit and staying nice and still while taking the photo.";
       Navigator.pop(context);
       _showDialog();
     }
