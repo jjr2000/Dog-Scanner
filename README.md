@@ -8,9 +8,9 @@ All the code that is involved in processing the data set, training the model and
 
 ### DCNN Resources directory
 #### Dog Extractor
-Dog Extractor is the program that has been written to process the Stanford Dogs dataset ready from teh model to train off, The datasets images and annotations can be downloaded and extracted into there respective folders within Original Dataset from: http://vision.stanford.edu/aditya86/ImageNetDogs/
+Dog Extractor is the program that has been written to process the Stanford Dogs dataset ready from the model to train off. The datasets images and annotations can be downloaded and extracted into their respective folders within Original Dataset from: http://vision.stanford.edu/aditya86/ImageNetDogs/
 
-This Soloution was written in Visual Studio 2019 with C++ tools, though other versions of Visual studio may also work.
+This Solution was written in Visual Studio 2019 with C++ tools, though other versions of Visual studio may also work.
 
 The program relies on Boost and OpenCV which can be installed using vcpkg.
 Instruction on the instalation and use of vcpkg can be found here: https://github.com/microsoft/vcpkg#quick-start-windows
@@ -44,28 +44,28 @@ After train_model.py has been run load_checkpoints.py can then be run in IDLE an
 
 ### Web_API directory
 #### check_acc.py
-Once a trained model has been put in the models directory, check_acc.py can be run in IDLE to evaluate it's mean accuracy on the entire original dataset.
+Once a trained model has been put in the models directory, check_acc.py can be run in IDLE to evaluate its mean accuracy on the entire original dataset.
 
 #### app.py
-app.py is a flask app so needs to be run slighly diffrentley to the other python scripts, in a command window the Web_API directory must be CD'd into then the following command needs to be run
+app.py is a flask app so needs to be run slightly differently to the other python scripts, in a command window the Web_API directory must be CD'd into then the following command needs to be run
 > flask run –host=0.0.0.0
 
-With -host=0.0.0.0 making accessible from all netowrk interfaces on a machine.
-Next a firewall rule must be set up to allow tcp requests on port 5000
-Finally if ecternal accessibility is required a port forwarding rule must be set up in your router.
+With -host=0.0.0.0 making accessible from all network interfaces on a machine.
+Next a firewall rule must be set up to allow tcp requests on port 5000.
+Finally if external accessibility is required a port forwarding rule must be set up in your router.
 
 #### tester.py
 Once the flask service is running, tester.py can be run in IDLE to check it is working.
 
 ### src directory
-The source directory contains the Flutter application, to build, compile and run this you firslty need installed Flutter and Android Studio, the full instructions for this can be found here: https://flutter.dev/docs/get-started/install/windows
+The source directory contains the Flutter application, to build, compile and run this you firstly need to install Flutter and Android Studio, the full instructions for this can be found here: https://flutter.dev/docs/get-started/install/windows
 
-The src directory can then be opened with android studio. Once open the packages get command must be run to install the apps dependancies.
-To be able to build the app a unique signig key will need to set up following this guide here: https://flutter.dev/docs/deployment/android
+The src directory can then be opened with android studio. Once opened the 'pub get' command must be run to install the apps dependencies.
+To be able to build the app a unique signing key will need to set up following this guide here: https://flutter.dev/docs/deployment/android
 
 Finally the address on Line 5 of lib/detect_breed.dart must be updated to that of your machine IP address, or external if port forwarding has been setup.
 
-The app can be be built and run on your device of choice.
+The app can now be built and run on your device of choice.
 
 # Credit
 
