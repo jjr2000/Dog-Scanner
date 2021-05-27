@@ -18,7 +18,7 @@ Instruction on the instalation and use of vcpkg can be found here: https://githu
 Main.cpp is then simply run in the solution and the data set will be processed.
 
 #### Python Setup
-Several programs to follow where written in Python, more specifically version 3.8.6 which can be downloaded from here: https://www.python.org/downloads/release/python-386/
+Several programs to follow were written in Python, more specifically version 3.8.6 which can be downloaded from here: https://www.python.org/downloads/release/python-386/
 
 The versions of the following packages can then be installed using PIP
 
