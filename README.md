@@ -70,5 +70,7 @@ The app can be be built and run on your device of choice.
 # Credit
 
 This repository is the sole creation of Jaidon James Rymer.
+
 Produced as part of his final year project.
+
 Submitted in partial fulfilment of the requirements for the Degree of BSc(Hons) Computer Science at School of Computer Science, College of Science, University of Lincoln
