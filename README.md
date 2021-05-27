@@ -50,7 +50,7 @@ Once a trained model has been put in the models directory, check_acc.py can be r
 app.py is a flask app so needs to be run slightly differently to the other python scripts, in a command window the Web_API directory must be CD'd into then the following command needs to be run
 > flask run –host=0.0.0.0
 
-With -host=0.0.0.0 making accessible from all network interfaces on a machine.
+With '-host=0.0.0.0' it making accessible from all network interfaces on a machine.
 Next a firewall rule must be set up to allow tcp requests on port 5000.
 Finally if external accessibility is required a port forwarding rule must be set up in your router.
 
